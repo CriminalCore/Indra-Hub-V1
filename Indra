@@ -1,7 +1,7 @@
 
 
-local ScreenGui = Instance.new("ScreenGui")
-local IndraHub = Instance.new("Frame")
+local IndraHub = Instance.new("ScreenGui")
+local IndraHub_2 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local label = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
@@ -9,31 +9,44 @@ local template = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local UpdatesTab = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
-local noupdates = Instance.new("TextLabel")
-local HomeTab = Instance.new("Frame")
+local Date = Instance.new("TextLabel")
+local UpdateVersion = Instance.new("TextLabel")
+local templateupdate = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
-local test = Instance.new("TextLabel")
-local Home = Instance.new("TextButton")
+local Update = Instance.new("TextLabel")
+local Update1 = Instance.new("TextLabel")
+local HomeTab = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local Updates = Instance.new("TextButton")
+local Inf = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local cmdx = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local shatter = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local AdminScript = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Home = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Updates = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
-
 IndraHub.Name = "Indra Hub"
-IndraHub.Parent = ScreenGui
-IndraHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-IndraHub.Position = UDim2.new(0.298302352, 0, 0.244897962, 0)
-IndraHub.Size = UDim2.new(0, 499, 0, 350)
-IndraHub.Active = true
-IndraHub.Draggable = true
+IndraHub.Parent = game.CoreGui
 
-UICorner.Parent = IndraHub
+IndraHub_2.Name = "Indra Hub"
+IndraHub_2.Parent = IndraHub
+IndraHub_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+IndraHub_2.Position = UDim2.new(0.298302352, 0, 0.244897962, 0)
+IndraHub_2.Size = UDim2.new(0, 499, 0, 350)
+IndraHub_2.Active = true
+IndraHub_2.Draggable = true
+
+UICorner.Parent = IndraHub_2
 
 label.Name = "label"
-label.Parent = IndraHub
+label.Parent = IndraHub_2
 label.BackgroundColor3 = Color3.fromRGB(239, 34, 34)
 label.Size = UDim2.new(0, 499, 0, 40)
 label.Font = Enum.Font.Fantasy
@@ -45,7 +58,7 @@ UICorner_2.CornerRadius = UDim.new(0, 7)
 UICorner_2.Parent = label
 
 template.Name = "template"
-template.Parent = IndraHub
+template.Parent = IndraHub_2
 template.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 template.Position = UDim2.new(0.0140280565, 0, 0.13142857, 0)
 template.Size = UDim2.new(0, 103, 0, 296)
@@ -53,7 +66,7 @@ template.Size = UDim2.new(0, 103, 0, 296)
 UICorner_3.Parent = template
 
 UpdatesTab.Name = "UpdatesTab"
-UpdatesTab.Parent = IndraHub
+UpdatesTab.Parent = IndraHub_2
 UpdatesTab.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 UpdatesTab.Position = UDim2.new(0.232464924, 0, 0.13142857, 0)
 UpdatesTab.Size = UDim2.new(0, 376, 0, 296)
@@ -61,39 +74,127 @@ UpdatesTab.Visible = false
 
 UICorner_4.Parent = UpdatesTab
 
-noupdates.Name = "no updates"
-noupdates.Parent = UpdatesTab
-noupdates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-noupdates.BackgroundTransparency = 1.000
-noupdates.Position = UDim2.new(0.23404254, 0, 0.351351351, 0)
-noupdates.Size = UDim2.new(0, 200, 0, 50)
-noupdates.Font = Enum.Font.Arial
-noupdates.Text = "No Updates"
-noupdates.TextColor3 = Color3.fromRGB(255, 255, 255)
-noupdates.TextSize = 20.000
+Date.Name = "Date"
+Date.Parent = UpdatesTab
+Date.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Date.BackgroundTransparency = 1.000
+Date.Position = UDim2.new(0.670212805, 0, 0.0202702694, 0)
+Date.Size = UDim2.new(0, 84, 0, 15)
+Date.Font = Enum.Font.Arial
+Date.Text = "Last Update: March 26, 2022"
+Date.TextColor3 = Color3.fromRGB(255, 255, 255)
+Date.TextSize = 12.000
+
+UpdateVersion.Name = "Update Version"
+UpdateVersion.Parent = UpdatesTab
+UpdateVersion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateVersion.BackgroundTransparency = 1.000
+UpdateVersion.Position = UDim2.new(0.234042555, 0, 0.033783786, 0)
+UpdateVersion.Size = UDim2.new(0, 200, 0, 50)
+UpdateVersion.Font = Enum.Font.Arial
+UpdateVersion.Text = "Update 1.1"
+UpdateVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateVersion.TextSize = 19.000
+
+templateupdate.Name = "template update"
+templateupdate.Parent = UpdatesTab
+templateupdate.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+templateupdate.Position = UDim2.new(0.0212765951, 0, 0.202702701, 0)
+templateupdate.Size = UDim2.new(0, 360, 0, 230)
+
+UICorner_5.Parent = templateupdate
+
+Update.Name = "Update"
+Update.Parent = templateupdate
+Update.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Update.BackgroundTransparency = 1.000
+Update.Position = UDim2.new(0.165839136, 0, 0.0678026304, 0)
+Update.Size = UDim2.new(0, 240, 0, 29)
+Update.Font = Enum.Font.Arial
+Update.Text = "Added 3 Scripts!"
+Update.TextColor3 = Color3.fromRGB(255, 255, 255)
+Update.TextSize = 19.000
+
+Update1.Name = "Update1"
+Update1.Parent = templateupdate
+Update1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Update1.BackgroundTransparency = 1.000
+Update1.Position = UDim2.new(0.222222224, 0, 0.152173907, 0)
+Update1.Size = UDim2.new(0, 200, 0, 50)
+Update1.Font = Enum.Font.Arial
+Update1.Text = "Added Script Sections!"
+Update1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Update1.TextSize = 19.000
+Update1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 HomeTab.Name = "HomeTab"
-HomeTab.Parent = IndraHub
+HomeTab.Parent = IndraHub_2
 HomeTab.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 HomeTab.Position = UDim2.new(0.232464924, 0, 0.13142857, 0)
 HomeTab.Size = UDim2.new(0, 376, 0, 296)
 HomeTab.Visible = false
 
-UICorner_5.Parent = HomeTab
+UICorner_6.Parent = HomeTab
 
-test.Name = "test"
-test.Parent = HomeTab
-test.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-test.BackgroundTransparency = 1.000
-test.Position = UDim2.new(0.236702129, 0, 0.351351351, 0)
-test.Size = UDim2.new(0, 200, 0, 50)
-test.Font = Enum.Font.Arial
-test.Text = "No Script Have Added For Now"
-test.TextColor3 = Color3.fromRGB(255, 255, 255)
-test.TextSize = 16.000
+Inf.Name = "Inf"
+Inf.Parent = HomeTab
+Inf.BackgroundColor3 = Color3.fromRGB(239, 34, 34)
+Inf.Position = UDim2.new(0.0132978838, 0, 0.165540531, 0)
+Inf.Size = UDim2.new(0, 95, 0, 30)
+Inf.Font = Enum.Font.Gotham
+Inf.Text = "Infinite yield"
+Inf.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inf.TextSize = 12.000
+Inf.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_7.Parent = Inf
+
+cmdx.Name = "cmd-x"
+cmdx.Parent = HomeTab
+cmdx.BackgroundColor3 = Color3.fromRGB(239, 34, 34)
+cmdx.Position = UDim2.new(0.372340441, 0, 0.165540546, 0)
+cmdx.Size = UDim2.new(0, 95, 0, 30)
+cmdx.Font = Enum.Font.Gotham
+cmdx.Text = "cmd-x"
+cmdx.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmdx.TextSize = 12.000
+cmdx.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+
+UICorner_8.Parent = cmdx
+
+shatter.Name = "shatter"
+shatter.Parent = HomeTab
+shatter.BackgroundColor3 = Color3.fromRGB(239, 34, 34)
+shatter.Position = UDim2.new(0.734042585, 0, 0.165540531, 0)
+shatter.Size = UDim2.new(0, 95, 0, 30)
+shatter.Font = Enum.Font.Gotham
+shatter.Text = "ShatterVast"
+shatter.TextColor3 = Color3.fromRGB(255, 255, 255)
+shatter.TextSize = 12.000
+shatter.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CriminalCore/ShatterVast-admin/main/ShatterVast?token=GHSAT0AAAAAABS2M3K4QAUJOVT3HUICPFVQYR73UZQ'))()
+end)
+
+UICorner_9.Parent = shatter
+
+AdminScript.Name = "Admin Script"
+AdminScript.Parent = HomeTab
+AdminScript.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+AdminScript.Position = UDim2.new(0.011101976, 0, 0.0259073377, 0)
+AdminScript.Size = UDim2.new(0, 366, 0, 30)
+AdminScript.Font = Enum.Font.Arial
+AdminScript.Text = "Admin Scripts"
+AdminScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminScript.TextSize = 14.000
+
+UICorner_10.Parent = AdminScript
 
 Home.Name = "Home"
-Home.Parent = IndraHub
+Home.Parent = IndraHub_2
 Home.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 Home.Position = UDim2.new(0.0260521043, 0, 0.148571432, 0)
 Home.Size = UDim2.new(0, 90, 0, 35)
@@ -102,10 +203,10 @@ Home.Text = "Home"
 Home.TextColor3 = Color3.fromRGB(255, 255, 255)
 Home.TextSize = 14.000
 
-UICorner_6.Parent = Home
+UICorner_11.Parent = Home
 
 Updates.Name = "Updates"
-Updates.Parent = IndraHub
+Updates.Parent = IndraHub_2
 Updates.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 Updates.Position = UDim2.new(0.0260521043, 0, 0.271428585, 0)
 Updates.Size = UDim2.new(0, 90, 0, 35)
@@ -114,11 +215,11 @@ Updates.Text = "Updates"
 Updates.TextColor3 = Color3.fromRGB(255, 255, 255)
 Updates.TextSize = 14.000
 
-UICorner_7.Parent = Updates
+UICorner_12.Parent = Updates
 
 -- Scripts:
 
-local function XFICA_fake_script() -- Home.LocalScript 
+local function SDHGFSL_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -126,8 +227,8 @@ local function XFICA_fake_script() -- Home.LocalScript
 		script.Parent.Parent.UpdatesTab.Visible = false
 	end)
 end
-coroutine.wrap(XFICA_fake_script)()
-local function KIHTVZ_fake_script() -- Updates.LocalScript 
+coroutine.wrap(SDHGFSL_fake_script)()
+local function KTWRB_fake_script() -- Updates.LocalScript 
 	local script = Instance.new('LocalScript', Updates)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -135,4 +236,4 @@ local function KIHTVZ_fake_script() -- Updates.LocalScript
 		script.Parent.Parent.UpdatesTab.Visible = true
 	end)
 end
-coroutine.wrap(KIHTVZ_fake_script)()
+coroutine.wrap(KTWRB_fake_script)()
